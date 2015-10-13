@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  MenuTabViewController.h
 //  Wiper
 //
 //  Created by Sherpa on 13/10/15.
@@ -8,11 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
-
+@interface MenuTabViewController : UITabBarController
 
 @end
-

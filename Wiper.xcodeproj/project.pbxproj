@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		9A4884AB1BCD40990040BBBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4884AA1BCD40990040BBBF /* main.m */; };
 		9A4884AE1BCD40990040BBBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4884AD1BCD40990040BBBF /* AppDelegate.m */; };
-		9A4884B11BCD40990040BBBF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4884B01BCD40990040BBBF /* ViewController.m */; };
 		9A4884B41BCD40990040BBBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4884B21BCD40990040BBBF /* Main.storyboard */; };
-		9A4884B71BCD40990040BBBF /* Wiper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A4884B51BCD40990040BBBF /* Wiper.xcdatamodeld */; };
 		9A4884B91BCD40990040BBBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A4884B81BCD40990040BBBF /* Assets.xcassets */; };
 		9A4884BC1BCD40990040BBBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4884BA1BCD40990040BBBF /* LaunchScreen.storyboard */; };
 		9A4884C71BCD40990040BBBF /* WiperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4884C61BCD40990040BBBF /* WiperTests.m */; };
 		9A4884D21BCD40990040BBBF /* WiperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4884D11BCD40990040BBBF /* WiperUITests.m */; };
+		9A4884E11BCD42CA0040BBBF /* ReferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4884E01BCD42CA0040BBBF /* ReferenceViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9A4884E41BCD42DE0040BBBF /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4884E31BCD42DE0040BBBF /* SearchViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9A4884E71BCD431A0040BBBF /* MenuTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4884E61BCD431A0040BBBF /* MenuTabViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9A4884EB1BCD51130040BBBF /* ReferenceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4884EA1BCD51130040BBBF /* ReferenceTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +42,7 @@
 		9A4884AA1BCD40990040BBBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9A4884AC1BCD40990040BBBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9A4884AD1BCD40990040BBBF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9A4884AF1BCD40990040BBBF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9A4884B01BCD40990040BBBF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9A4884B31BCD40990040BBBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9A4884B61BCD40990040BBBF /* Wiper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wiper.xcdatamodel; sourceTree = "<group>"; };
 		9A4884B81BCD40990040BBBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A4884BB1BCD40990040BBBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A4884BD1BCD40990040BBBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +52,14 @@
 		9A4884CD1BCD40990040BBBF /* WiperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4884D11BCD40990040BBBF /* WiperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WiperUITests.m; sourceTree = "<group>"; };
 		9A4884D31BCD40990040BBBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A4884DF1BCD42CA0040BBBF /* ReferenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReferenceViewController.h; path = Controllers/ReferenceViewController.h; sourceTree = "<group>"; };
+		9A4884E01BCD42CA0040BBBF /* ReferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReferenceViewController.m; path = Controllers/ReferenceViewController.m; sourceTree = "<group>"; };
+		9A4884E21BCD42DE0040BBBF /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchViewController.h; path = Controllers/SearchViewController.h; sourceTree = "<group>"; };
+		9A4884E31BCD42DE0040BBBF /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchViewController.m; path = Controllers/SearchViewController.m; sourceTree = "<group>"; };
+		9A4884E51BCD431A0040BBBF /* MenuTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuTabViewController.h; path = Controllers/MenuTabViewController.h; sourceTree = "<group>"; };
+		9A4884E61BCD431A0040BBBF /* MenuTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuTabViewController.m; path = Controllers/MenuTabViewController.m; sourceTree = "<group>"; };
+		9A4884E91BCD51130040BBBF /* ReferenceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReferenceTableViewCell.h; path = Views/ReferenceTableViewCell.h; sourceTree = "<group>"; };
+		9A4884EA1BCD51130040BBBF /* ReferenceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReferenceTableViewCell.m; path = Views/ReferenceTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,13 +112,13 @@
 			children = (
 				9A4884AC1BCD40990040BBBF /* AppDelegate.h */,
 				9A4884AD1BCD40990040BBBF /* AppDelegate.m */,
-				9A4884AF1BCD40990040BBBF /* ViewController.h */,
-				9A4884B01BCD40990040BBBF /* ViewController.m */,
+				9A4884F01BCD5D620040BBBF /* Model */,
+				9A4884EC1BCD51170040BBBF /* Views */,
+				9A4884E81BCD43220040BBBF /* Controllers */,
 				9A4884B21BCD40990040BBBF /* Main.storyboard */,
 				9A4884B81BCD40990040BBBF /* Assets.xcassets */,
 				9A4884BA1BCD40990040BBBF /* LaunchScreen.storyboard */,
 				9A4884BD1BCD40990040BBBF /* Info.plist */,
-				9A4884B51BCD40990040BBBF /* Wiper.xcdatamodeld */,
 				9A4884A91BCD40990040BBBF /* Supporting Files */,
 			);
 			path = Wiper;
@@ -141,6 +148,35 @@
 				9A4884D31BCD40990040BBBF /* Info.plist */,
 			);
 			path = WiperUITests;
+			sourceTree = "<group>";
+		};
+		9A4884E81BCD43220040BBBF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9A4884DF1BCD42CA0040BBBF /* ReferenceViewController.h */,
+				9A4884E01BCD42CA0040BBBF /* ReferenceViewController.m */,
+				9A4884E21BCD42DE0040BBBF /* SearchViewController.h */,
+				9A4884E31BCD42DE0040BBBF /* SearchViewController.m */,
+				9A4884E51BCD431A0040BBBF /* MenuTabViewController.h */,
+				9A4884E61BCD431A0040BBBF /* MenuTabViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9A4884EC1BCD51170040BBBF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A4884E91BCD51130040BBBF /* ReferenceTableViewCell.h */,
+				9A4884EA1BCD51130040BBBF /* ReferenceTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		9A4884F01BCD5D620040BBBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,10 +312,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A4884B11BCD40990040BBBF /* ViewController.m in Sources */,
-				9A4884B71BCD40990040BBBF /* Wiper.xcdatamodeld in Sources */,
+				9A4884EB1BCD51130040BBBF /* ReferenceTableViewCell.m in Sources */,
 				9A4884AE1BCD40990040BBBF /* AppDelegate.m in Sources */,
+				9A4884E41BCD42DE0040BBBF /* SearchViewController.m in Sources */,
+				9A4884E11BCD42CA0040BBBF /* ReferenceViewController.m in Sources */,
 				9A4884AB1BCD40990040BBBF /* main.m in Sources */,
+				9A4884E71BCD431A0040BBBF /* MenuTabViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,19 +563,6 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		9A4884B51BCD40990040BBBF /* Wiper.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				9A4884B61BCD40990040BBBF /* Wiper.xcdatamodel */,
-			);
-			currentVersion = 9A4884B61BCD40990040BBBF /* Wiper.xcdatamodel */;
-			path = Wiper.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 9A48849E1BCD40990040BBBF /* Project object */;
 }
