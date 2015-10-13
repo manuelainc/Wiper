@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A4884AB1BCD40990040BBBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4884AA1BCD40990040BBBF /* main.m */; };
+		9A4884AE1BCD40990040BBBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4884AD1BCD40990040BBBF /* AppDelegate.m */; };
+		9A4884B11BCD40990040BBBF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4884B01BCD40990040BBBF /* ViewController.m */; };
+		9A4884B41BCD40990040BBBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4884B21BCD40990040BBBF /* Main.storyboard */; };
+		9A4884B71BCD40990040BBBF /* Wiper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A4884B51BCD40990040BBBF /* Wiper.xcdatamodeld */; };
+		9A4884B91BCD40990040BBBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A4884B81BCD40990040BBBF /* Assets.xcassets */; };
+		9A4884BC1BCD40990040BBBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4884BA1BCD40990040BBBF /* LaunchScreen.storyboard */; };
+		9A4884C71BCD40990040BBBF /* WiperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4884C61BCD40990040BBBF /* WiperTests.m */; };
+		9A4884D21BCD40990040BBBF /* WiperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4884D11BCD40990040BBBF /* WiperUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A4884C31BCD40990040BBBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A48849E1BCD40990040BBBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A4884A51BCD40990040BBBF;
+			remoteInfo = Wiper;
+		};
+		9A4884CE1BCD40990040BBBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A48849E1BCD40990040BBBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A4884A51BCD40990040BBBF;
+			remoteInfo = Wiper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9A4884A61BCD40990040BBBF /* Wiper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wiper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A4884AA1BCD40990040BBBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9A4884AC1BCD40990040BBBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9A4884AD1BCD40990040BBBF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9A4884AF1BCD40990040BBBF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9A4884B01BCD40990040BBBF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9A4884B31BCD40990040BBBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9A4884B61BCD40990040BBBF /* Wiper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wiper.xcdatamodel; sourceTree = "<group>"; };
+		9A4884B81BCD40990040BBBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A4884BB1BCD40990040BBBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A4884BD1BCD40990040BBBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A4884C21BCD40990040BBBF /* WiperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A4884C61BCD40990040BBBF /* WiperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WiperTests.m; sourceTree = "<group>"; };
+		9A4884C81BCD40990040BBBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A4884CD1BCD40990040BBBF /* WiperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A4884D11BCD40990040BBBF /* WiperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WiperUITests.m; sourceTree = "<group>"; };
+		9A4884D31BCD40990040BBBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A4884A31BCD40990040BBBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4884BF1BCD40990040BBBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4884CA1BCD40990040BBBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A48849D1BCD40990040BBBF = {
+			isa = PBXGroup;
+			children = (
+				9A4884A81BCD40990040BBBF /* Wiper */,
+				9A4884C51BCD40990040BBBF /* WiperTests */,
+				9A4884D01BCD40990040BBBF /* WiperUITests */,
+				9A4884A71BCD40990040BBBF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A4884A71BCD40990040BBBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A4884A61BCD40990040BBBF /* Wiper.app */,
+				9A4884C21BCD40990040BBBF /* WiperTests.xctest */,
+				9A4884CD1BCD40990040BBBF /* WiperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A4884A81BCD40990040BBBF /* Wiper */ = {
+			isa = PBXGroup;
+			children = (
+				9A4884AC1BCD40990040BBBF /* AppDelegate.h */,
+				9A4884AD1BCD40990040BBBF /* AppDelegate.m */,
+				9A4884AF1BCD40990040BBBF /* ViewController.h */,
+				9A4884B01BCD40990040BBBF /* ViewController.m */,
+				9A4884B21BCD40990040BBBF /* Main.storyboard */,
+				9A4884B81BCD40990040BBBF /* Assets.xcassets */,
+				9A4884BA1BCD40990040BBBF /* LaunchScreen.storyboard */,
+				9A4884BD1BCD40990040BBBF /* Info.plist */,
+				9A4884B51BCD40990040BBBF /* Wiper.xcdatamodeld */,
+				9A4884A91BCD40990040BBBF /* Supporting Files */,
+			);
+			path = Wiper;
+			sourceTree = "<group>";
+		};
+		9A4884A91BCD40990040BBBF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A4884AA1BCD40990040BBBF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A4884C51BCD40990040BBBF /* WiperTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A4884C61BCD40990040BBBF /* WiperTests.m */,
+				9A4884C81BCD40990040BBBF /* Info.plist */,
+			);
+			path = WiperTests;
+			sourceTree = "<group>";
+		};
+		9A4884D01BCD40990040BBBF /* WiperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9A4884D11BCD40990040BBBF /* WiperUITests.m */,
+				9A4884D31BCD40990040BBBF /* Info.plist */,
+			);
+			path = WiperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A4884A51BCD40990040BBBF /* Wiper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A4884D61BCD40990040BBBF /* Build configuration list for PBXNativeTarget "Wiper" */;
+			buildPhases = (
+				9A4884A21BCD40990040BBBF /* Sources */,
+				9A4884A31BCD40990040BBBF /* Frameworks */,
+				9A4884A41BCD40990040BBBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wiper;
+			productName = Wiper;
+			productReference = 9A4884A61BCD40990040BBBF /* Wiper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A4884C11BCD40990040BBBF /* WiperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A4884D91BCD40990040BBBF /* Build configuration list for PBXNativeTarget "WiperTests" */;
+			buildPhases = (
+				9A4884BE1BCD40990040BBBF /* Sources */,
+				9A4884BF1BCD40990040BBBF /* Frameworks */,
+				9A4884C01BCD40990040BBBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A4884C41BCD40990040BBBF /* PBXTargetDependency */,
+			);
+			name = WiperTests;
+			productName = WiperTests;
+			productReference = 9A4884C21BCD40990040BBBF /* WiperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9A4884CC1BCD40990040BBBF /* WiperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A4884DC1BCD40990040BBBF /* Build configuration list for PBXNativeTarget "WiperUITests" */;
+			buildPhases = (
+				9A4884C91BCD40990040BBBF /* Sources */,
+				9A4884CA1BCD40990040BBBF /* Frameworks */,
+				9A4884CB1BCD40990040BBBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A4884CF1BCD40990040BBBF /* PBXTargetDependency */,
+			);
+			name = WiperUITests;
+			productName = WiperUITests;
+			productReference = 9A4884CD1BCD40990040BBBF /* WiperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A48849E1BCD40990040BBBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = manuelainc;
+				TargetAttributes = {
+					9A4884A51BCD40990040BBBF = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = S63AXZ6Y9D;
+					};
+					9A4884C11BCD40990040BBBF = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = S63AXZ6Y9D;
+						TestTargetID = 9A4884A51BCD40990040BBBF;
+					};
+					9A4884CC1BCD40990040BBBF = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = S63AXZ6Y9D;
+						TestTargetID = 9A4884A51BCD40990040BBBF;
+					};
+				};
+			};
+			buildConfigurationList = 9A4884A11BCD40990040BBBF /* Build configuration list for PBXProject "Wiper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A48849D1BCD40990040BBBF;
+			productRefGroup = 9A4884A71BCD40990040BBBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A4884A51BCD40990040BBBF /* Wiper */,
+				9A4884C11BCD40990040BBBF /* WiperTests */,
+				9A4884CC1BCD40990040BBBF /* WiperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A4884A41BCD40990040BBBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A4884BC1BCD40990040BBBF /* LaunchScreen.storyboard in Resources */,
+				9A4884B91BCD40990040BBBF /* Assets.xcassets in Resources */,
+				9A4884B41BCD40990040BBBF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4884C01BCD40990040BBBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4884CB1BCD40990040BBBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A4884A21BCD40990040BBBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A4884B11BCD40990040BBBF /* ViewController.m in Sources */,
+				9A4884B71BCD40990040BBBF /* Wiper.xcdatamodeld in Sources */,
+				9A4884AE1BCD40990040BBBF /* AppDelegate.m in Sources */,
+				9A4884AB1BCD40990040BBBF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4884BE1BCD40990040BBBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A4884C71BCD40990040BBBF /* WiperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4884C91BCD40990040BBBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A4884D21BCD40990040BBBF /* WiperUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A4884C41BCD40990040BBBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A4884A51BCD40990040BBBF /* Wiper */;
+			targetProxy = 9A4884C31BCD40990040BBBF /* PBXContainerItemProxy */;
+		};
+		9A4884CF1BCD40990040BBBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A4884A51BCD40990040BBBF /* Wiper */;
+			targetProxy = 9A4884CE1BCD40990040BBBF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9A4884B21BCD40990040BBBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A4884B31BCD40990040BBBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9A4884BA1BCD40990040BBBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A4884BB1BCD40990040BBBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A4884D41BCD40990040BBBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A4884D51BCD40990040BBBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A4884D71BCD40990040BBBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Wiper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.manuelainc.Wiper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9A4884D81BCD40990040BBBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Wiper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.manuelainc.Wiper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9A4884DA1BCD40990040BBBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WiperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.manuelainc.WiperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wiper.app/Wiper";
+			};
+			name = Debug;
+		};
+		9A4884DB1BCD40990040BBBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WiperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.manuelainc.WiperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wiper.app/Wiper";
+			};
+			name = Release;
+		};
+		9A4884DD1BCD40990040BBBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WiperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.manuelainc.WiperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Wiper;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9A4884DE1BCD40990040BBBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WiperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.manuelainc.WiperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Wiper;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A4884A11BCD40990040BBBF /* Build configuration list for PBXProject "Wiper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A4884D41BCD40990040BBBF /* Debug */,
+				9A4884D51BCD40990040BBBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A4884D61BCD40990040BBBF /* Build configuration list for PBXNativeTarget "Wiper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A4884D71BCD40990040BBBF /* Debug */,
+				9A4884D81BCD40990040BBBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9A4884D91BCD40990040BBBF /* Build configuration list for PBXNativeTarget "WiperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A4884DA1BCD40990040BBBF /* Debug */,
+				9A4884DB1BCD40990040BBBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9A4884DC1BCD40990040BBBF /* Build configuration list for PBXNativeTarget "WiperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A4884DD1BCD40990040BBBF /* Debug */,
+				9A4884DE1BCD40990040BBBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9A4884B51BCD40990040BBBF /* Wiper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9A4884B61BCD40990040BBBF /* Wiper.xcdatamodel */,
+			);
+			currentVersion = 9A4884B61BCD40990040BBBF /* Wiper.xcdatamodel */;
+			path = Wiper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9A48849E1BCD40990040BBBF /* Project object */;
+}
