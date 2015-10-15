@@ -28,7 +28,9 @@
     ReferenceViewController *refVC = nav.viewControllers[0];
     refVC.dataArr = arr;
     
-    SearchViewController *searVC = [[self viewControllers] objectAtIndex:1];
+    UINavigationController *navSearc = [[self viewControllers] objectAtIndex:1];
+
+    SearchViewController *searVC = navSearc.viewControllers[0];
     searVC.dataArr = arr;
     
 }
