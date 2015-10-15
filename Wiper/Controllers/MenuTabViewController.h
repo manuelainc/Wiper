@@ -10,4 +10,6 @@
 
 @interface MenuTabViewController : UITabBarController
 
+@property (nonatomic, copy) NSArray *dataArray;
+
 @end

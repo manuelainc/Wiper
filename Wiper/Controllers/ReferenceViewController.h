@@ -10,4 +10,6 @@
 
 @interface ReferenceViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
+@property (nonatomic, copy) NSArray* dataArr;
+
 @end

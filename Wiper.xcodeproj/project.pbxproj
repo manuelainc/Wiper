@@ -18,6 +18,10 @@
 		9A4884E41BCD42DE0040BBBF /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4884E31BCD42DE0040BBBF /* SearchViewController.m */; settings = {ASSET_TAGS = (); }; };
 		9A4884E71BCD431A0040BBBF /* MenuTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4884E61BCD431A0040BBBF /* MenuTabViewController.m */; settings = {ASSET_TAGS = (); }; };
 		9A4884EB1BCD51130040BBBF /* ReferenceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4884EA1BCD51130040BBBF /* ReferenceTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		9A4884F21BCD69BE0040BBBF /* wiperData.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9A4884F11BCD69BE0040BBBF /* wiperData.csv */; settings = {ASSET_TAGS = (); }; };
+		9A4884F51BCDA6FC0040BBBF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4884F41BCDA6FC0040BBBF /* DetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9A4884FB1BCE6B8A0040BBBF /* HeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4884FA1BCE6B8A0040BBBF /* HeaderCollectionReusableView.m */; settings = {ASSET_TAGS = (); }; };
+		9A4885051BCE9CCB0040BBBF /* UIColor+MAIColorScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4885041BCE9CCB0040BBBF /* UIColor+MAIColorScheme.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,13 @@
 		9A4884E61BCD431A0040BBBF /* MenuTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuTabViewController.m; path = Controllers/MenuTabViewController.m; sourceTree = "<group>"; };
 		9A4884E91BCD51130040BBBF /* ReferenceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReferenceTableViewCell.h; path = Views/ReferenceTableViewCell.h; sourceTree = "<group>"; };
 		9A4884EA1BCD51130040BBBF /* ReferenceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReferenceTableViewCell.m; path = Views/ReferenceTableViewCell.m; sourceTree = "<group>"; };
+		9A4884F11BCD69BE0040BBBF /* wiperData.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wiperData.csv; sourceTree = "<group>"; };
+		9A4884F31BCDA6FC0040BBBF /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = Controllers/DetailViewController.h; sourceTree = "<group>"; };
+		9A4884F41BCDA6FC0040BBBF /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = Controllers/DetailViewController.m; sourceTree = "<group>"; };
+		9A4884F91BCE6B8A0040BBBF /* HeaderCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeaderCollectionReusableView.h; path = Views/HeaderCollectionReusableView.h; sourceTree = "<group>"; };
+		9A4884FA1BCE6B8A0040BBBF /* HeaderCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeaderCollectionReusableView.m; path = Views/HeaderCollectionReusableView.m; sourceTree = "<group>"; };
+		9A4885031BCE9CCB0040BBBF /* UIColor+MAIColorScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MAIColorScheme.h"; sourceTree = "<group>"; };
+		9A4885041BCE9CCB0040BBBF /* UIColor+MAIColorScheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MAIColorScheme.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +130,9 @@
 				9A4884B81BCD40990040BBBF /* Assets.xcassets */,
 				9A4884BA1BCD40990040BBBF /* LaunchScreen.storyboard */,
 				9A4884BD1BCD40990040BBBF /* Info.plist */,
+				9A4884F11BCD69BE0040BBBF /* wiperData.csv */,
+				9A4885031BCE9CCB0040BBBF /* UIColor+MAIColorScheme.h */,
+				9A4885041BCE9CCB0040BBBF /* UIColor+MAIColorScheme.m */,
 				9A4884A91BCD40990040BBBF /* Supporting Files */,
 			);
 			path = Wiper;
@@ -159,6 +173,8 @@
 				9A4884E31BCD42DE0040BBBF /* SearchViewController.m */,
 				9A4884E51BCD431A0040BBBF /* MenuTabViewController.h */,
 				9A4884E61BCD431A0040BBBF /* MenuTabViewController.m */,
+				9A4884F31BCDA6FC0040BBBF /* DetailViewController.h */,
+				9A4884F41BCDA6FC0040BBBF /* DetailViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -168,6 +184,8 @@
 			children = (
 				9A4884E91BCD51130040BBBF /* ReferenceTableViewCell.h */,
 				9A4884EA1BCD51130040BBBF /* ReferenceTableViewCell.m */,
+				9A4884F91BCE6B8A0040BBBF /* HeaderCollectionReusableView.h */,
+				9A4884FA1BCE6B8A0040BBBF /* HeaderCollectionReusableView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -285,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A4884F21BCD69BE0040BBBF /* wiperData.csv in Resources */,
 				9A4884BC1BCD40990040BBBF /* LaunchScreen.storyboard in Resources */,
 				9A4884B91BCD40990040BBBF /* Assets.xcassets in Resources */,
 				9A4884B41BCD40990040BBBF /* Main.storyboard in Resources */,
@@ -313,11 +332,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A4884EB1BCD51130040BBBF /* ReferenceTableViewCell.m in Sources */,
+				9A4885051BCE9CCB0040BBBF /* UIColor+MAIColorScheme.m in Sources */,
 				9A4884AE1BCD40990040BBBF /* AppDelegate.m in Sources */,
 				9A4884E41BCD42DE0040BBBF /* SearchViewController.m in Sources */,
 				9A4884E11BCD42CA0040BBBF /* ReferenceViewController.m in Sources */,
+				9A4884FB1BCE6B8A0040BBBF /* HeaderCollectionReusableView.m in Sources */,
 				9A4884AB1BCD40990040BBBF /* main.m in Sources */,
 				9A4884E71BCD431A0040BBBF /* MenuTabViewController.m in Sources */,
+				9A4884F51BCDA6FC0040BBBF /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,7 +484,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.manuelainc.Wiper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -474,7 +496,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.manuelainc.Wiper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

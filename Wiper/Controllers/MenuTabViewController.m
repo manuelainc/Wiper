@@ -7,6 +7,9 @@
 //
 
 #import "MenuTabViewController.h"
+#import "ReferenceViewController.h"
+#import "SearchViewController.h"
+
 
 @interface MenuTabViewController ()
 
@@ -16,7 +19,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSArray *arr = [self dataArray];
     // Do any additional setup after loading the view.
+    
+    UINavigationController *nav = [[self viewControllers] objectAtIndex:0];
+    
+    ReferenceViewController *refVC = nav.viewControllers[0];
+    refVC.dataArr = arr;
+    
+    SearchViewController *searVC = [[self viewControllers] objectAtIndex:1];
+    searVC.dataArr = arr;
+    
 }
 
 - (void)didReceiveMemoryWarning {

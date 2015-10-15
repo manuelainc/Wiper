@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MenuTabViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    MenuTabViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"tabBarController"];
+    viewController.dataArray = [self getInfoFromCsvWithName:@"wiperData"];
+
+    self.window.rootViewController = viewController;
+    [self.window makeKeyAndVisible];
+    
+    
+    
     return YES;
 }
 
@@ -41,6 +55,27 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
+}
+
+- (NSArray *)getInfoFromCsvWithName:(NSString*)name{
+    NSString *strPath = [[NSBundle mainBundle] pathForResource:name ofType:@"csv"];
+    NSString *strFile = [NSString stringWithContentsOfFile:strPath encoding:NSUTF8StringEncoding error:nil];
+    if (!strFile) {
+        NSLog(@"Error reading file.");
+    }
+    NSArray *arrayReferences = [[NSArray alloc] init];
+    arrayReferences = [strFile componentsSeparatedByString:@"\n"];
+    
+    NSMutableArray *mutArr = [[NSMutableArray alloc]init];
+    
+    for(NSString *reference in arrayReferences) {
+        NSArray *arrayReference = [[NSArray alloc] init];
+        arrayReference = [reference componentsSeparatedByString:@";"];
+        [mutArr addObject:arrayReference];
+    }
+    
+    return mutArr;
+
 }
 
 @end

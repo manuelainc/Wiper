@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SearchViewController : UIViewController
+@interface SearchViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
+
+@property (nonatomic, copy) NSArray* dataArr;
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionViewSea;
+
 
 @end
