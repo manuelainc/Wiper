@@ -49,12 +49,15 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
 
     DetailViewController *detailVC = [storyboard instantiateViewControllerWithIdentifier:@"detailVC"];
+    
+    NSArray *arr = [self.dataArr objectAtIndex:indexPath.row];
 
     detailVC.categorySt = [[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:0];
     detailVC.titleSt = [[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:1];
     detailVC.descriptionSt = [[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:2];
     detailVC.imageIcon = [UIImage imageNamed:[[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:3]];
     detailVC.note = [[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:4];
+    detailVC.backgroundColor = [UIColor getColorForSection:arr[0]];
     [self.navigationController pushViewController:detailVC animated:YES];
     
     
@@ -90,8 +93,11 @@
 
     
     cell.titleLbl.text = [[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:1];
-    cell.imageView.image = [UIImage imageNamed:[[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:3]];
+    UIImage *img = [UIImage imageNamed:[[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:3]];
+    [cell.imageVw setImage:img];
+    
     cell.backgroundColor = [UIColor getColorForSection:[[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:0]];
+    cell.topVw.layer.cornerRadius = cell.topVw.frame.size.width/2;
     // Deciding which data to put into this particular cell.
     // If it the first row, the data input will be "Data1" from the array.
     

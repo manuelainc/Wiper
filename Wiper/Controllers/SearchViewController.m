@@ -9,9 +9,12 @@
 #import "SearchViewController.h"
 #import "HeaderCollectionReusableView.h"
 #import "UIColor+MAIColorScheme.h"
+#import "ImageCollectionViewCell.h"
+#import "InstructionsViewController.h"
 
 @interface SearchViewController ()
-
+@property (nonatomic,copy) NSMutableArray *selectedIcon;
+@property (nonatomic, copy) ImageCollectionViewCell *cellItem;
 @end
 
 @implementation SearchViewController
@@ -19,7 +22,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.collectionViewSea registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"collectionCell"];
+    [self.collectionViewSea registerClass:[ImageCollectionViewCell class] forCellWithReuseIdentifier:@"collectionCell"];
+    self.collectionViewSea.allowsMultipleSelection = YES;
+    
+    _selectedIcon = [[NSMutableArray alloc]init];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,35 +34,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
-{
-    NSInteger viewWidth = collectionView.frame.size.width;
-    NSInteger totalCellWidth;
-    NSInteger totalSpacingWidth;
+- (void)viewWillAppear:(BOOL)animated{
     
-    if ([[UIScreen mainScreen] bounds].size.height <= 568){
-        totalCellWidth = 50 * 4;
-        totalSpacingWidth = 10 * (4 -1);
-    }else{
-        totalCellWidth = 50 * 5;
-        totalSpacingWidth = 10 * (5 -1);
-    }
-
-    
-    
-    
-    
-    NSInteger leftInset = (viewWidth - (totalCellWidth + totalSpacingWidth)) / 2;
-    NSInteger rightInset = leftInset;
-    
-    return UIEdgeInsetsMake(0, leftInset, 0, rightInset);
+    [self.collectionViewSea reloadData];
 }
 
--(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+
+#pragma mark - CollectionView methods
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     return 6;
 }
 
--(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
     switch (section) {
         case 0:
@@ -68,7 +58,7 @@
             return 13;
             break;
         case 3:
-            return 1;
+            return 2;
             break;
         case 4:
             return 6;
@@ -79,50 +69,26 @@
             
         }
     
-    return [self.dataArr count];
+    return 0;
 }
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
     UICollectionReusableView *reusableview = nil;
-    int position = 0;
-    
-    switch (indexPath.section) {
-        case 0:
-            position = 0;
-            break;
-        case 1:
-            position = position + 11;
-            break;
-        case 2:
-            position = position + 14;
-            break;
-        case 3:
-            position = position + 27;
-            break;
-        case 4:
-            position = position + 28;
-            break;
-        case 5:
-            position = position + 34;
-            break;
-            
-    }
-    
-    position = position + (int)indexPath.row;
     
     if (kind == UICollectionElementKindSectionHeader) {
         HeaderCollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView" forIndexPath:indexPath];
-        NSString *title = [[self.dataArr objectAtIndex:position] objectAtIndex:0];
+        NSString *title = [[self.dataArr objectAtIndex:[self getPositionWithIndex:indexPath]] objectAtIndex:0];
         headerView.label.text = title;
-        headerView.label.layer.cornerRadius = 20;
+       // headerView.label.layer.cornerRadius = 20;
         headerView.label.layer.masksToBounds = YES;
         
         
+        int index = [self getPositionWithIndex:indexPath];
         
         
-        
-        headerView.label.backgroundColor = [UIColor getColorForSection:[[self.dataArr objectAtIndex:position] objectAtIndex:0]];;
+        headerView.label.backgroundColor = [UIColor
+                                            getColorForSection:[[self.dataArr objectAtIndex:index] objectAtIndex:0]];
         
         reusableview = headerView;
     }
@@ -133,6 +99,86 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
+    _cellItem = (ImageCollectionViewCell*)[collectionView cellForItemAtIndexPath:indexPath];
+    
+    if (!_cellItem) {
+        _cellItem = (ImageCollectionViewCell*)[collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell"
+                                                                                       forIndexPath:indexPath];
+    }
+    
+    UIImage *imageICon = [UIImage imageNamed:[[self.dataArr objectAtIndex:[self getPositionWithIndex:indexPath]] objectAtIndex:3]];
+    [_cellItem.imgIcon setImage:imageICon];
+    [_cellItem.layer setCornerRadius:_cellItem.frame.size.width/8];
+    
+    int index = [self getPositionWithIndex:indexPath];
+
+    if (_cellItem.selected) {
+        _cellItem.backgroundColor = [UIColor getColorForSection:[self.dataArr[index] objectAtIndex:0]];
+        _cellItem.imgIcon.alpha = 0.5;
+    }else{
+        _cellItem.backgroundColor = [UIColor clearColor];
+        _cellItem.imgIcon.alpha = 1;
+    }
+    
+    return _cellItem;
+    
+}
+
+
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    int position = [self getPositionWithIndex:indexPath];
+    
+    _cellItem = (ImageCollectionViewCell*)[collectionView cellForItemAtIndexPath:indexPath];
+    _cellItem.topVw.backgroundColor = [UIColor redColor];
+    _cellItem.backgroundColor = [UIColor getColorForSection:[self.dataArr[position] objectAtIndex:0]];
+    _cellItem.imgIcon.alpha = 0.5;
+    
+    
+    [[self selectedIcon] addObject:self.dataArr[position]];
+    
+    
+    
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    int position = [self getPositionWithIndex:indexPath];
+
+    _cellItem = (ImageCollectionViewCell*)[collectionView cellForItemAtIndexPath:indexPath];
+    _cellItem.backgroundColor = [UIColor clearColor];
+    _cellItem.imgIcon.alpha = 1;
+    
+    [[self selectedIcon] removeObject:self.dataArr[position]];
+
+}
+
+#pragma mark - actions
+- (IBAction)okButtonPressed:(id)sender{
+    
+    InstructionsViewController *instructionsVC = [self.storyboard instantiateViewControllerWithIdentifier:@"instructionsViewController"];
+    NSMutableArray* sel = [[NSMutableArray alloc] init];
+    for (NSArray* ar in self.selectedIcon) {
+        [sel addObject:ar];
+    }
+    [self.selectedIcon removeAllObjects];
+    [instructionsVC setDataArr:sel];
+    
+    for (NSIndexPath *indexPath in [self.collectionViewSea indexPathsForSelectedItems]) {
+        [self.collectionViewSea deselectItemAtIndexPath:indexPath animated:NO];
+    }
+    
+    
+    [self.navigationController pushViewController:instructionsVC animated:YES];
+    
+    
+    
+}
+
+#pragma mark - utils
+- (int)getPositionWithIndex:(NSIndexPath *)indexPath{
+
     int position = 0;
     
     switch (indexPath.section) {
@@ -149,28 +195,27 @@
             position = position + 27;
             break;
         case 4:
-            position = position + 28;
+            position = position + 29;
             break;
         case 5:
-            position = position + 34;
+            position = position + 35;
             break;
             
     }
-
+    
     position = position + (int)indexPath.row;
     
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
-    cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[[self.dataArr objectAtIndex:position] objectAtIndex:3]]];
-//    cell.backgroundView.alpha = 0.8;
-//    
-//    cell.backgroundColor = [UIColor yellowColor];
-    
-    return cell;
-    
+    return position;
+
+
 }
 
+- (UIColor *)getPositionWithString:(NSString *)string{
 
-/*
+    return [UIColor getColorForSection:string];
+
+}
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -178,6 +223,6 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 @end

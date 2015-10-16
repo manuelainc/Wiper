@@ -1,0 +1,43 @@
+Wash;Lavado a Máquina (Normal);Garment may be laundered through the use of hottest available water, detergent or soap, agitation, and a machine designed for this purpose.;washNormal;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL WASH PROCEDURES.
+Wash;Machine Wash (Cold);Initial water temperature should not exceed 30C or 65 to 85F.;washCold;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL WASH PROCEDURES.
+Wash;Machine Wash (Warm);Initial water temperature should not exceed 40C or 105F.;washWarm;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL WASH PROCEDURES.
+Wash;Machine Wash (Hot);Initial water temperature should not exceed 50C or 120F.;washHot50;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL WASH PROCEDURES.
+Wash;Machine Wash (Hot);Initial water temperature should not exceed 60C or 140F.;washHot60;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL WASH PROCEDURES.
+Wash;Machine Wash (Hot);Initial water temperature should not exceed 70C or 160F.;washHot70;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL WASH PROCEDURES.
+Wash;Machine Wash (Hot);Initial water temperature should not exceed 95C or 200F.;washHot95;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL WASH PROCEDURES.
+Wash;Machine Wash (Permanent Press);Garment may be machine laundered only on the setting designed to preserve Permanent Press with cool down or cold rinse prior to reduced spin.;washPermanent;.
+Wash;Machine Wash (Gentle or Delicate);Garment may be machine laundered only on the setting designed for gentle agitation and/or reduced time for delicate items.;washGentle;.
+Wash;Hand Wash;Garment may be laundered through the use of water, detergent or soap and gentle hand manipulation.;washHand;.
+Wash;Do not Wash;Garment may not be safely laundered by any process. Normally accompanied by Dry Clean instructions.;washNo;.
+Bleach;Bleach When Needed;Any commercially available bleach product may be used in the laundering process.;bleachNeeded;All (98+%) washable textiles are safe in some type of bleach. IF BLEACH IS NOT MENTIONED OR REPRESENTED BY A SYMBOL, ANY BLEACH MAY BE USED.
+Bleach;Non-Chlorine Bleach When Needed;Only a non-chlorine, color-safe bleach may be used in the laundering process. Chlorine bleach may not be used.;bleachNonChlorine;All (98+%) washable textiles are safe in some type of bleach. IF BLEACH IS NOT MENTIONED OR REPRESENTED BY A SYMBOL, ANY BLEACH MAY BE USED.
+Bleach;Do Not Bleach;No bleach product may be used. The garment is not colorfast or structurally able to withstand any bleach.;bleachNot;All (98+%) washable textiles are safe in some type of bleach. IF BLEACH IS NOT MENTIONED OR REPRESENTED BY A SYMBOL, ANY BLEACH MAY BE USED.
+Dry;Tumble Dry (Normal);A machine dryer may be regularly used at the hottest available temperature setting.;dryNormal;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL DRY PROCEDURES.
+Dry;Tumble Dry (Normal, Low Heat);A machine dryer may be regularly used at a maximum of Low Heat setting.;dryLow;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL DRY PROCEDURES.
+Dry;Tumble Dry (Normal, Medium Heat);A machine dryer may be regularly used at a maximum of Medium Heat setting.;dryMedium;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL DRY PROCEDURES.
+Dry;Tumble Dry (Normal, High Heat);A machine dryer may be regularly used at a High Heat setting.;dryHigh;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL DRY PROCEDURES.
+Dry;Tumble Dry (Normal, No Heat);A machine dryer may be regularly used only at No Heat or Air Only setting.;dryNo;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL DRY PROCEDURES.
+Dry;Tumble Dry (Permanent Press);A machine dryer may be regularly used only at the Permanent Press setting.;dryPerman;.
+Dry;Tumble Dry (Gentle);A machine dryer may be regularly used only at the Gentle setting.;dryGentle;.
+Dry;Do Not Tumble Dry;A machine dryer may not be used. Usually accompanied by an alternate drying method symbol.;dryNotTumble;.
+Dry;Do Not Dry;A machine dryer may not be used. Usually accompanied by an alternate drying method symbol.;dryNotDry;.
+Dry;Line Dry;Hang damp garment from line or bar, in or out doors.;dryLine;.
+Dry;Drip Dry;Hang dripping wet garment from line or bar, in or out doors, without hand shaping or smoothing.;dryDrip;.
+Dry;Dry Flat;Lay out horizontally for drying.;dryFlat;.
+Dry;Dry In Shade;Usually added to Line or Drip Dry. Dry away from direct sunlight.;dryShade;.
+Wring;Do Not Wring;Do not Wring.;wringNo;.
+Iron;Iron, Any Temperature, Steam or Dry;Regular ironing may be needed and may be performed at any available temperature with or without steam is acceptable.;ironAny;IF IRONING IS NOT A NECESSARY, REGULAR CARE PROCEDURE IT NEED NOT BE MENTIONED.
+Iron;Iron (Low);Regular ironing, steam or dry, may be performed at Low setting (110C, 230F) only.;ironLow;IF IRONING IS NOT A NECESSARY, REGULAR CARE PROCEDURE IT NEED NOT BE MENTIONED.
+Iron;Iron (Medium);Regular ironing, steam or dry, may be performed at Medium setting (150C, 300F).;ironMed;IF IRONING IS NOT A NECESSARY, REGULAR CARE PROCEDURE IT NEED NOT BE MENTIONED.
+Iron;Iron (High);Regular ironing, steam or dry, may be performed at High setting (200C, 290F).;ironHig;IF IRONING IS NOT A NECESSARY, REGULAR CARE PROCEDURE IT NEED NOT BE MENTIONED.
+Iron;Do Not Steam;Steam ironing will harm garment, but regular dry ironing at indicated temperature setting is acceptable.;ironNotSteam;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL IRONING PROCEDURES.
+Iron;Do Not Iron;Item may not be smoothed or finished with an iron.;ironNotIron;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL IRONING PROCEDURES.
+DryClean;Dryclean;Dry Clean, any solvent, any cycle any moisture, any heat.;dryClean;.
+DryClean;Dryclean, Any Solvent;Dry Clean, any solvent. Usually used with other restrictions on proper dry cleaning procedure.;dryAny;.
+DryClean;Dryclean, Petroleum Solvent Only;Dry Clean using only petroleum solvent. Usually used with other restrictions.;dryPetro;.
+DryClean;Dryclean;Any Solvent Except Trichloroethylene",Any dry cleaning solvent other than trichloroethylene may be safely used.;dryNoTri;.
+DryClean;Dryclean, Short Cycle;May be used with A, P, or F solvent restriction.;dryShort;.
+DryClean;Dryclean, Reduced Moisture;May be used with A, P, or F solvent restriction.;dryRedu;.
+DryClean;Dryclean, Low Heat;May be used with A, P, or F solvent restriction.;dryLowH;.
+DryClean;Dryclean, No Steam;May be used with A, P, or F solvent restriction.;dryNoSteam;.
+DryClean;Do Not Dryclean;Garment may not be commercially drycleaned.;dryNoD;.

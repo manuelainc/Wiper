@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = _backgroundColor;
+    
     // Do any additional setup after loading the view.
     [self categoryLbl].text = [self categorySt];
     [self titleLbl].text = [self titleSt];

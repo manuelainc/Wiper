@@ -22,6 +22,9 @@
 		9A4884F51BCDA6FC0040BBBF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4884F41BCDA6FC0040BBBF /* DetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 		9A4884FB1BCE6B8A0040BBBF /* HeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4884FA1BCE6B8A0040BBBF /* HeaderCollectionReusableView.m */; settings = {ASSET_TAGS = (); }; };
 		9A4885051BCE9CCB0040BBBF /* UIColor+MAIColorScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4885041BCE9CCB0040BBBF /* UIColor+MAIColorScheme.m */; settings = {ASSET_TAGS = (); }; };
+		9A4885081BCFD88B0040BBBF /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4885071BCFD88B0040BBBF /* ImageCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		9A48850B1BD01AFB0040BBBF /* InstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A48850A1BD01AFB0040BBBF /* InstructionsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9AF710ED1BD155FE0013B210 /* InstructionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF710EC1BD155FE0013B210 /* InstructionCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,12 @@
 		9A4884FA1BCE6B8A0040BBBF /* HeaderCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeaderCollectionReusableView.m; path = Views/HeaderCollectionReusableView.m; sourceTree = "<group>"; };
 		9A4885031BCE9CCB0040BBBF /* UIColor+MAIColorScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MAIColorScheme.h"; sourceTree = "<group>"; };
 		9A4885041BCE9CCB0040BBBF /* UIColor+MAIColorScheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MAIColorScheme.m"; sourceTree = "<group>"; };
+		9A4885061BCFD88B0040BBBF /* ImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageCollectionViewCell.h; path = Views/ImageCollectionViewCell.h; sourceTree = "<group>"; };
+		9A4885071BCFD88B0040BBBF /* ImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageCollectionViewCell.m; path = Views/ImageCollectionViewCell.m; sourceTree = "<group>"; };
+		9A4885091BD01AFB0040BBBF /* InstructionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InstructionsViewController.h; path = Controllers/InstructionsViewController.h; sourceTree = "<group>"; };
+		9A48850A1BD01AFB0040BBBF /* InstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InstructionsViewController.m; path = Controllers/InstructionsViewController.m; sourceTree = "<group>"; };
+		9AF710EB1BD155FE0013B210 /* InstructionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InstructionCell.h; path = Views/InstructionCell.h; sourceTree = "<group>"; };
+		9AF710EC1BD155FE0013B210 /* InstructionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InstructionCell.m; path = Views/InstructionCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +132,7 @@
 			children = (
 				9A4884AC1BCD40990040BBBF /* AppDelegate.h */,
 				9A4884AD1BCD40990040BBBF /* AppDelegate.m */,
+				9AF710E91BD10A460013B210 /* Categories */,
 				9A4884F01BCD5D620040BBBF /* Model */,
 				9A4884EC1BCD51170040BBBF /* Views */,
 				9A4884E81BCD43220040BBBF /* Controllers */,
@@ -131,8 +141,6 @@
 				9A4884BA1BCD40990040BBBF /* LaunchScreen.storyboard */,
 				9A4884BD1BCD40990040BBBF /* Info.plist */,
 				9A4884F11BCD69BE0040BBBF /* wiperData.csv */,
-				9A4885031BCE9CCB0040BBBF /* UIColor+MAIColorScheme.h */,
-				9A4885041BCE9CCB0040BBBF /* UIColor+MAIColorScheme.m */,
 				9A4884A91BCD40990040BBBF /* Supporting Files */,
 			);
 			path = Wiper;
@@ -167,14 +175,13 @@
 		9A4884E81BCD43220040BBBF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9A4884DF1BCD42CA0040BBBF /* ReferenceViewController.h */,
-				9A4884E01BCD42CA0040BBBF /* ReferenceViewController.m */,
-				9A4884E21BCD42DE0040BBBF /* SearchViewController.h */,
-				9A4884E31BCD42DE0040BBBF /* SearchViewController.m */,
+				9AF710EA1BD151EA0013B210 /* TabControllers */,
 				9A4884E51BCD431A0040BBBF /* MenuTabViewController.h */,
 				9A4884E61BCD431A0040BBBF /* MenuTabViewController.m */,
 				9A4884F31BCDA6FC0040BBBF /* DetailViewController.h */,
 				9A4884F41BCDA6FC0040BBBF /* DetailViewController.m */,
+				9A4885091BD01AFB0040BBBF /* InstructionsViewController.h */,
+				9A48850A1BD01AFB0040BBBF /* InstructionsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -186,6 +193,10 @@
 				9A4884EA1BCD51130040BBBF /* ReferenceTableViewCell.m */,
 				9A4884F91BCE6B8A0040BBBF /* HeaderCollectionReusableView.h */,
 				9A4884FA1BCE6B8A0040BBBF /* HeaderCollectionReusableView.m */,
+				9A4885061BCFD88B0040BBBF /* ImageCollectionViewCell.h */,
+				9A4885071BCFD88B0040BBBF /* ImageCollectionViewCell.m */,
+				9AF710EB1BD155FE0013B210 /* InstructionCell.h */,
+				9AF710EC1BD155FE0013B210 /* InstructionCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -195,6 +206,26 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		9AF710E91BD10A460013B210 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9A4885031BCE9CCB0040BBBF /* UIColor+MAIColorScheme.h */,
+				9A4885041BCE9CCB0040BBBF /* UIColor+MAIColorScheme.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		9AF710EA1BD151EA0013B210 /* TabControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9A4884DF1BCD42CA0040BBBF /* ReferenceViewController.h */,
+				9A4884E01BCD42CA0040BBBF /* ReferenceViewController.m */,
+				9A4884E21BCD42DE0040BBBF /* SearchViewController.h */,
+				9A4884E31BCD42DE0040BBBF /* SearchViewController.m */,
+			);
+			name = TabControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,10 +364,13 @@
 			files = (
 				9A4884EB1BCD51130040BBBF /* ReferenceTableViewCell.m in Sources */,
 				9A4885051BCE9CCB0040BBBF /* UIColor+MAIColorScheme.m in Sources */,
+				9A4885081BCFD88B0040BBBF /* ImageCollectionViewCell.m in Sources */,
 				9A4884AE1BCD40990040BBBF /* AppDelegate.m in Sources */,
 				9A4884E41BCD42DE0040BBBF /* SearchViewController.m in Sources */,
 				9A4884E11BCD42CA0040BBBF /* ReferenceViewController.m in Sources */,
+				9AF710ED1BD155FE0013B210 /* InstructionCell.m in Sources */,
 				9A4884FB1BCE6B8A0040BBBF /* HeaderCollectionReusableView.m in Sources */,
+				9A48850B1BD01AFB0040BBBF /* InstructionsViewController.m in Sources */,
 				9A4884AB1BCD40990040BBBF /* main.m in Sources */,
 				9A4884E71BCD431A0040BBBF /* MenuTabViewController.m in Sources */,
 				9A4884F51BCDA6FC0040BBBF /* DetailViewController.m in Sources */,
@@ -567,6 +601,7 @@
 				9A4884D81BCD40990040BBBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A4884D91BCD40990040BBBF /* Build configuration list for PBXNativeTarget "WiperTests" */ = {
 			isa = XCConfigurationList;
@@ -575,6 +610,7 @@
 				9A4884DB1BCD40990040BBBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A4884DC1BCD40990040BBBF /* Build configuration list for PBXNativeTarget "WiperUITests" */ = {
 			isa = XCConfigurationList;
@@ -583,6 +619,7 @@
 				9A4884DE1BCD40990040BBBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

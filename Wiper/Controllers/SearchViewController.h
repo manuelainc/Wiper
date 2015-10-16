@@ -13,5 +13,6 @@
 @property (nonatomic, copy) NSArray* dataArr;
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionViewSea;
 
+- (IBAction)okButtonPressed:(id)sender;
 
 @end

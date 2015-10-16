@@ -11,5 +11,10 @@
 @interface ReferenceTableViewCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UILabel *titleLbl;
 @property (strong, nonatomic) IBOutlet UIImageView *imageVw;
+@property (strong, nonatomic) IBOutlet UIView *topVw;
+
+@property (nonatomic, strong) NSString *titleSt;
+@property (nonatomic, strong) UIImage *symbolImg;
+@property (nonatomic, strong) UIColor *backgroundClr;
 
 @end

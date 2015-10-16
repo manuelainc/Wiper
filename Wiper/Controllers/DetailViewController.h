@@ -16,9 +16,11 @@
 @property (strong, nonatomic) IBOutlet UILabel *noteLbl;
 @property (strong, nonatomic) IBOutlet UITextView *noteTV;
 
+
 @property (nonatomic, copy) NSString *categorySt;
 @property (nonatomic, copy) NSString *titleSt;
 @property (nonatomic, strong) UIImage *imageIcon;
 @property (nonatomic, copy) NSString *descriptionSt;
 @property (nonatomic, copy) NSString *note;
+@property (nonatomic, strong) UIColor* backgroundColor;
 @end

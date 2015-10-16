@@ -25,7 +25,8 @@ Dry;Line Dry;Hang damp garment from line or bar, in or out doors.;dryLine;.
 Dry;Drip Dry;Hang dripping wet garment from line or bar, in or out doors, without hand shaping or smoothing.;dryDrip;.
 Dry;Dry Flat;Lay out horizontally for drying.;dryFlat;.
 Dry;Dry In Shade;Usually added to Line or Drip Dry. Dry away from direct sunlight.;dryShade;.
-Wring;Do Not Wring;Do not Wring.;wringNo;.
+Wring;Do Not Wring;Wring.;wringNo;.
+Wring;Wring;Wring.;wring;.
 Iron;Iron, Any Temperature, Steam or Dry;Regular ironing may be needed and may be performed at any available temperature with or without steam is acceptable.;ironAny;IF IRONING IS NOT A NECESSARY, REGULAR CARE PROCEDURE IT NEED NOT BE MENTIONED.
 Iron;Iron (Low);Regular ironing, steam or dry, may be performed at Low setting (110C, 230F) only.;ironLow;IF IRONING IS NOT A NECESSARY, REGULAR CARE PROCEDURE IT NEED NOT BE MENTIONED.
 Iron;Iron (Medium);Regular ironing, steam or dry, may be performed at Medium setting (150C, 300F).;ironMed;IF IRONING IS NOT A NECESSARY, REGULAR CARE PROCEDURE IT NEED NOT BE MENTIONED.
