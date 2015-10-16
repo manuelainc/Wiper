@@ -42,8 +42,32 @@
 //    self.instructionsTxtVw.text = self.instructionsSt;
 //    
 
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"back.png"]]];
 
+    UIImage *backImage = [UIImage imageNamed:@"back.png"];
+    UIImageView *backgroundImageView=[[UIImageView alloc]initWithFrame:self.view.frame];
+    backgroundImageView.image=backImage;
+    [self.view insertSubview:backgroundImageView atIndex:0];
+    
+    // create blur effect
+    UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    
+    // create vibrancy effect
+    UIVibrancyEffect *vibrancy = [UIVibrancyEffect effectForBlurEffect:blur];
+    
+    // add blur to an effect view
+    UIVisualEffectView *effectView = [[UIVisualEffectView alloc]initWithEffect:blur];
+    effectView.frame = self.view.frame;
+    
+    // add vibrancy to yet another effect view
+    UIVisualEffectView *vibrantView = [[UIVisualEffectView alloc]initWithEffect:vibrancy];
+    vibrantView.frame = self.view.frame;
+    
+    // add both effect views to the image view
+    [backgroundImageView addSubview:effectView];
+    [backgroundImageView addSubview:vibrantView];
 
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated{
