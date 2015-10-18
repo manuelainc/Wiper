@@ -12,6 +12,8 @@
 
 @property (nonatomic, copy) NSArray* dataArr;
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionViewSea;
+@property (strong, nonatomic) IBOutlet UIButton *okButton;
+@property (strong, nonatomic) IBOutlet UIVisualEffectView *vissualEffectOkBtn;
 
 - (IBAction)okButtonPressed:(id)sender;
 

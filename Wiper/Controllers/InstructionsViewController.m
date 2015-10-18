@@ -21,6 +21,8 @@
 }
 
 - (void)viewDidLoad{
+
+    self.tabBarController.tabBar.hidden = YES;
     
 //    NSMutableString *mutableSt = [NSMutableString stringWithCapacity:_instrucctionsArr.count];
 //    
@@ -42,9 +44,9 @@
 //    self.instructionsTxtVw.text = self.instructionsSt;
 //    
 
-    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"back.png"]]];
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]]];
 
-    UIImage *backImage = [UIImage imageNamed:@"back.png"];
+    UIImage *backImage = [UIImage imageNamed:@"background.png"];
     UIImageView *backgroundImageView=[[UIImageView alloc]initWithFrame:self.view.frame];
     backgroundImageView.image=backImage;
     [self.view insertSubview:backgroundImageView atIndex:0];
@@ -66,6 +68,8 @@
     // add both effect views to the image view
     [backgroundImageView addSubview:effectView];
     [backgroundImageView addSubview:vibrantView];
+    
+    [self.tableView setContentInset:UIEdgeInsetsMake(0, 0, 100, 0)];
 
     
 }
@@ -92,12 +96,13 @@
     {
         cell = [[InstructionCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifer];
     }
-    UIImage *img = [UIImage imageNamed:[[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:3]];
+    UIImage *img = [UIImage imageNamed:[[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:4]];
     
     cell.iconImg.image = img;
-    cell.titleLbl = [[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:0];
-    cell.backgroundColor = [UIColor getColorForSection:[[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:0]];
-    cell.instructionTxtVw.text = [[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:2];
+    cell.titleLbl.text = [[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:1];
+    cell.backgroundColor = [UIColor getColorForSection:[[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:1]];
+    cell.instructionTxtVw.text = [[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:3];
+    cell.categoryLbl.text = [[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:2];
 
     NSLog(@"size of cell %f", cell.frame.size.height);
     NSLog(@"size of textview %f", cell.instructionTxtVw.frame.size.height);
@@ -116,21 +121,17 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- (IBAction)backButtonPush:(id)sender {
+    
+    CATransition *transition = [CATransition animation];
+    transition.duration = 1.0;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionPush;
+    transition.subtype = kCATransitionFromBottom;
+    transition.delegate = self;
+    [self.navigationController.view.layer addAnimation:transition forKey:nil];
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    
+}
 @end

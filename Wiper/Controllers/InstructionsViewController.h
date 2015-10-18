@@ -11,5 +11,8 @@
 @interface InstructionsViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) NSString *titleSt;
 @property (strong, nonatomic) NSArray *dataArr;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UIButton *backButton;
+- (IBAction)backButtonPush:(id)sender;
 
 @end

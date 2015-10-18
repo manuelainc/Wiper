@@ -15,7 +15,8 @@
 @property (strong, nonatomic) IBOutlet UITextView *descriptionTV;
 @property (strong, nonatomic) IBOutlet UILabel *noteLbl;
 @property (strong, nonatomic) IBOutlet UITextView *noteTV;
-
+@property (strong, nonatomic) IBOutlet UIView *contentVw;
+@property (strong, nonatomic) IBOutlet UIButton *backButton;
 
 @property (nonatomic, copy) NSString *categorySt;
 @property (nonatomic, copy) NSString *titleSt;
@@ -23,4 +24,7 @@
 @property (nonatomic, copy) NSString *descriptionSt;
 @property (nonatomic, copy) NSString *note;
 @property (nonatomic, strong) UIColor* backgroundColor;
+
+- (IBAction)backButtonPush:(id)sender;
+
 @end

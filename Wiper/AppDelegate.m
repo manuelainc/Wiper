@@ -24,7 +24,7 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     
     MenuTabViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"tabBarController"];
-    viewController.dataArray = [self getInfoFromCsvWithName:@"wiperData"];
+    viewController.dataArray = [self getInfoFromCsvWithName:@"wiperDataSpanish"];
 
     self.window.rootViewController = viewController;
     [self.window makeKeyAndVisible];

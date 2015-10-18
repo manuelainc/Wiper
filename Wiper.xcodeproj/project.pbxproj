@@ -25,6 +25,8 @@
 		9A4885081BCFD88B0040BBBF /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4885071BCFD88B0040BBBF /* ImageCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		9A48850B1BD01AFB0040BBBF /* InstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A48850A1BD01AFB0040BBBF /* InstructionsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		9AF710ED1BD155FE0013B210 /* InstructionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF710EC1BD155FE0013B210 /* InstructionCell.m */; settings = {ASSET_TAGS = (); }; };
+		9AF7113B1BD25EC50013B210 /* wiperDataSpanish.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9AF7113A1BD25EC50013B210 /* wiperDataSpanish.csv */; settings = {ASSET_TAGS = (); }; };
+		9AF7113D1BD3DD800013B210 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF7113C1BD3DD800013B210 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		9A48850A1BD01AFB0040BBBF /* InstructionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InstructionsViewController.m; path = Controllers/InstructionsViewController.m; sourceTree = "<group>"; };
 		9AF710EB1BD155FE0013B210 /* InstructionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InstructionCell.h; path = Views/InstructionCell.h; sourceTree = "<group>"; };
 		9AF710EC1BD155FE0013B210 /* InstructionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InstructionCell.m; path = Views/InstructionCell.m; sourceTree = "<group>"; };
+		9AF7113A1BD25EC50013B210 /* wiperDataSpanish.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wiperDataSpanish.csv; sourceTree = "<group>"; };
+		9AF7113C1BD3DD800013B210 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AF7113D1BD3DD800013B210 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +115,7 @@
 		9A48849D1BCD40990040BBBF = {
 			isa = PBXGroup;
 			children = (
+				9AF7113C1BD3DD800013B210 /* QuartzCore.framework */,
 				9A4884A81BCD40990040BBBF /* Wiper */,
 				9A4884C51BCD40990040BBBF /* WiperTests */,
 				9A4884D01BCD40990040BBBF /* WiperUITests */,
@@ -141,6 +147,7 @@
 				9A4884BA1BCD40990040BBBF /* LaunchScreen.storyboard */,
 				9A4884BD1BCD40990040BBBF /* Info.plist */,
 				9A4884F11BCD69BE0040BBBF /* wiperData.csv */,
+				9AF7113A1BD25EC50013B210 /* wiperDataSpanish.csv */,
 				9A4884A91BCD40990040BBBF /* Supporting Files */,
 			);
 			path = Wiper;
@@ -335,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A4884F21BCD69BE0040BBBF /* wiperData.csv in Resources */,
+				9AF7113B1BD25EC50013B210 /* wiperDataSpanish.csv in Resources */,
 				9A4884BC1BCD40990040BBBF /* LaunchScreen.storyboard in Resources */,
 				9A4884B91BCD40990040BBBF /* Assets.xcassets in Resources */,
 				9A4884B41BCD40990040BBBF /* Main.storyboard in Resources */,

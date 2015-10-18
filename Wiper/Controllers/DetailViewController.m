@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = _backgroundColor;
+    self.contentVw.backgroundColor = _backgroundColor;
     
     // Do any additional setup after loading the view.
     [self categoryLbl].text = [self categorySt];
@@ -27,9 +27,9 @@
     [[self descriptionTV] addObserver:self forKeyPath:@"contentSize" options:(NSKeyValueObservingOptionNew) context:NULL];
     [self descriptionTV].text = [self descriptionSt];
     if ([[UIScreen mainScreen] bounds].size.height == 568){
-        [[self descriptionTV] setFont:[UIFont systemFontOfSize:24]];
-    }else if([[UIScreen mainScreen] bounds].size.height < 568){
         [[self descriptionTV] setFont:[UIFont systemFontOfSize:20]];
+    }else if([[UIScreen mainScreen] bounds].size.height < 568){
+        [[self descriptionTV] setFont:[UIFont systemFontOfSize:16]];
     }
     [self.descriptionTV removeObserver:self forKeyPath:@"contentSize"];
     
@@ -43,6 +43,7 @@
         [self.descriptionTV removeObserver:self forKeyPath:@"contentSize"];
     }
     
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,6 +56,14 @@
     CGFloat topoffset = ([txtview bounds].size.height - [txtview contentSize].height * [txtview zoomScale])/2.0;
     topoffset = ( topoffset < 0.0 ? 0.0 : topoffset );
     txtview.contentOffset = (CGPoint){.x = 0, .y = -topoffset};
+}
+
+- (IBAction)backButtonPush:(id)sender{
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    
+    
 }
 
 /*

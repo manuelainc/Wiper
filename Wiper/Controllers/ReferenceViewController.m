@@ -52,15 +52,18 @@
     
     NSArray *arr = [self.dataArr objectAtIndex:indexPath.row];
 
-    detailVC.categorySt = [[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:0];
-    detailVC.titleSt = [[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:1];
-    detailVC.descriptionSt = [[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:2];
-    detailVC.imageIcon = [UIImage imageNamed:[[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:3]];
-    detailVC.note = [[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:4];
-    detailVC.backgroundColor = [UIColor getColorForSection:arr[0]];
-    [self.navigationController pushViewController:detailVC animated:YES];
+    detailVC.categorySt = [[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:1];
+    detailVC.titleSt = [[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:2];
+    detailVC.descriptionSt = [[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:3];
+    detailVC.imageIcon = [UIImage imageNamed:[[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:4]];
+    detailVC.note = [[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:5];
+    detailVC.backgroundColor = [UIColor getColorForSection:arr[1]];
     
-    
+    self.providesPresentationContextTransitionStyle = YES;
+    self.definesPresentationContext = YES;
+    [detailVC setModalPresentationStyle:UIModalPresentationOverCurrentContext];
+    [self presentViewController:detailVC animated:NO completion:nil];
+        
     
     
 }
@@ -92,11 +95,11 @@
     }
 
     
-    cell.titleLbl.text = [[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:1];
-    UIImage *img = [UIImage imageNamed:[[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:3]];
+    cell.titleLbl.text = [[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:2];
+    UIImage *img = [UIImage imageNamed:[[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:4]];
     [cell.imageVw setImage:img];
     
-    cell.backgroundColor = [UIColor getColorForSection:[[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:0]];
+    cell.backgroundColor = [UIColor getColorForSection:[[self.dataArr objectAtIndex:indexPath.row] objectAtIndex:1]];
     cell.topVw.layer.cornerRadius = cell.topVw.frame.size.width/2;
     // Deciding which data to put into this particular cell.
     // If it the first row, the data input will be "Data1" from the array.

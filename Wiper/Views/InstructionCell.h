@@ -13,5 +13,6 @@
 @property (nonatomic, strong) IBOutlet UITextView *instructionTxtVw;
 @property (nonatomic, strong) IBOutlet UILabel *titleLbl;
 @property (nonatomic, strong) IBOutlet UIImageView *iconImg;
+@property (nonatomic, strong) IBOutlet UILabel *categoryLbl;
 
 @end

@@ -11,6 +11,7 @@
 #import "UIColor+MAIColorScheme.h"
 #import "ImageCollectionViewCell.h"
 #import "InstructionsViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface SearchViewController ()
 @property (nonatomic,copy) NSMutableArray *selectedIcon;
@@ -29,7 +30,7 @@
     
     [self backgroundBlur];
     
-    
+    [self controlOkButton];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,10 +41,20 @@
 - (void)viewWillAppear:(BOOL)animated{
     
     [self.collectionViewSea reloadData];
+    [self controlOkButton];
+
 }
 
 
 #pragma mark - CollectionView methods
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
+    
+    if (section == 5) {
+        return UIEdgeInsetsMake(0, 25, 100, 25);
+    }
+    
+    return UIEdgeInsetsMake(0, 25, 0, 25);
+}
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     return 6;
 }
@@ -81,7 +92,7 @@
     
     if (kind == UICollectionElementKindSectionHeader) {
         HeaderCollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView" forIndexPath:indexPath];
-        NSString *title = [[self.dataArr objectAtIndex:[self getPositionWithIndex:indexPath]] objectAtIndex:0];
+        NSString *title = [[self.dataArr objectAtIndex:[self getPositionWithIndex:indexPath]] objectAtIndex:1];
         headerView.label.text = title;
        // headerView.label.layer.cornerRadius = 20;
         headerView.label.layer.masksToBounds = YES;
@@ -90,8 +101,7 @@
         int index = [self getPositionWithIndex:indexPath];
         
         
-        headerView.label.backgroundColor = [UIColor
-                                            getColorForSection:[[self.dataArr objectAtIndex:index] objectAtIndex:0]];
+        headerView.label.backgroundColor = [UIColor getColorForSection:[[self.dataArr objectAtIndex:index] objectAtIndex:1]];
         
         reusableview = headerView;
     }
@@ -109,14 +119,14 @@
                                                                                        forIndexPath:indexPath];
     }
     
-    UIImage *imageICon = [UIImage imageNamed:[[self.dataArr objectAtIndex:[self getPositionWithIndex:indexPath]] objectAtIndex:3]];
+    UIImage *imageICon = [UIImage imageNamed:[[self.dataArr objectAtIndex:[self getPositionWithIndex:indexPath]] objectAtIndex:4]];
     [_cellItem.imgIcon setImage:imageICon];
     [_cellItem.layer setCornerRadius:_cellItem.frame.size.width/8];
     
     int index = [self getPositionWithIndex:indexPath];
 
     if (_cellItem.selected) {
-        _cellItem.backgroundColor = [UIColor getColorForSection:[self.dataArr[index] objectAtIndex:0]];
+        _cellItem.backgroundColor = [UIColor getColorForSection:[self.dataArr[index] objectAtIndex:1]];
         _cellItem.imgIcon.alpha = 0.5;
     }else{
         _cellItem.backgroundColor = [UIColor clearColor];
@@ -135,13 +145,13 @@
     
     _cellItem = (ImageCollectionViewCell*)[collectionView cellForItemAtIndexPath:indexPath];
     _cellItem.topVw.backgroundColor = [UIColor redColor];
-    _cellItem.backgroundColor = [UIColor getColorForSection:[self.dataArr[position] objectAtIndex:0]];
+    _cellItem.backgroundColor = [UIColor getColorForSection:[self.dataArr[position] objectAtIndex:1]];
     _cellItem.imgIcon.alpha = 0.5;
     
     
     [[self selectedIcon] addObject:self.dataArr[position]];
     
-    
+    [self controlOkButton];
     
 }
 
@@ -154,7 +164,8 @@
     _cellItem.imgIcon.alpha = 1;
     
     [[self selectedIcon] removeObject:self.dataArr[position]];
-
+    
+    [self controlOkButton];
 }
 
 #pragma mark - actions
@@ -172,6 +183,14 @@
         [self.collectionViewSea deselectItemAtIndexPath:indexPath animated:NO];
     }
     
+
+    CATransition *transition = [CATransition animation];
+    transition.duration = 1.0;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionPush;
+    transition.subtype = kCATransitionFromTop;
+    transition.delegate = self;
+    [self.navigationController.view.layer addAnimation:transition forKey:nil];
     
     [self.navigationController pushViewController:instructionsVC animated:YES];
     
@@ -220,30 +239,43 @@
 }
 
 - (void)backgroundBlur{
-    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"back.png"]]];
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]]];
     
-    UIImage *backImage = [UIImage imageNamed:@"back.png"];
+    UIImage *backImage = [UIImage imageNamed:@"background.png"];
     UIImageView *backgroundImageView=[[UIImageView alloc]initWithFrame:self.view.frame];
     backgroundImageView.image=backImage;
     [self.view insertSubview:backgroundImageView atIndex:0];
     
-    // create blur effect
-    UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+//    // create blur effect
+//    UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+//    
+//    // create vibrancy effect
+//    UIVibrancyEffect *vibrancy = [UIVibrancyEffect effectForBlurEffect:blur];
+//    
+//    // add blur to an effect view
+//    UIVisualEffectView *effectView = [[UIVisualEffectView alloc]initWithEffect:blur];
+//    effectView.frame = self.view.frame;
+//    
+//    // add vibrancy to yet another effect view
+//    UIVisualEffectView *vibrantView = [[UIVisualEffectView alloc]initWithEffect:vibrancy];
+//    vibrantView.frame = self.view.frame;
+//    
+//    // add both effect views to the image view
+//    [backgroundImageView addSubview:effectView];
+//    [backgroundImageView addSubview:vibrantView];
+}
+
+- (void)controlOkButton{
     
-    // create vibrancy effect
-    UIVibrancyEffect *vibrancy = [UIVibrancyEffect effectForBlurEffect:blur];
+    if (_selectedIcon.count > 0) {
+        
+        [_okButton setHidden:NO];
+        [_vissualEffectOkBtn setHidden:NO];
+    }else{
+        [_okButton setHidden:YES];
+        [_vissualEffectOkBtn setHidden:YES];
+    }
     
-    // add blur to an effect view
-    UIVisualEffectView *effectView = [[UIVisualEffectView alloc]initWithEffect:blur];
-    effectView.frame = self.view.frame;
-    
-    // add vibrancy to yet another effect view
-    UIVisualEffectView *vibrantView = [[UIVisualEffectView alloc]initWithEffect:vibrancy];
-    vibrantView.frame = self.view.frame;
-    
-    // add both effect views to the image view
-    [backgroundImageView addSubview:effectView];
-    [backgroundImageView addSubview:vibrantView];
 }
 
 #pragma mark - Navigation
