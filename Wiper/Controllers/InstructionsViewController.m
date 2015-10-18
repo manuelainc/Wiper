@@ -134,4 +134,18 @@
     [self.navigationController popToRootViewControllerAnimated:YES];
     
 }
+
+- (IBAction)swipeBackGesture:(id)sender {
+    
+    CATransition *transition = [CATransition animation];
+    transition.duration = 1.0;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionPush;
+    transition.subtype = kCATransitionFromBottom;
+    transition.delegate = self;
+    [self.navigationController.view.layer addAnimation:transition forKey:nil];
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
 @end

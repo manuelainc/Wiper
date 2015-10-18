@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Wiper
+
+  Created by Sherpa on 18/10/15.
+  Copyright © 2015 manuelainc. All rights reserved.
+*/
+"WASH" = "Lavar";
+"BLEACH" = "Blanqueador";
+"DRY" = "Secar";
+"WRING" = "Escurrir";
+"IRON" = "Planchar";
+"DRYCLEAN" = "Lavado en Seco";

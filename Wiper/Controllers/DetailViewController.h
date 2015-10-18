@@ -26,5 +26,6 @@
 @property (nonatomic, strong) UIColor* backgroundColor;
 
 - (IBAction)backButtonPush:(id)sender;
+- (IBAction)swipeGesture:(id)sender;
 
 @end

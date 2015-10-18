@@ -1,44 +1,44 @@
-1;Wash;Lavado a Máquina (Normal);Prenda puede ser lavada mediante el uso del agua más caliente disponible.;washNormal;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL WASH PROCEDURES.
-2;Wash;Lavado a Máquina (Frio);La temperatura del agua inicial no debe exceder 30C o 65 to 85F.;washCold;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL WASH PROCEDURES.
-3;Wash;Lavado a Máquina (Templado);La temperatura del agua inicial no debe exceder 40C o 105F.;washWarm;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL WASH PROCEDURES.
-4;Wash;Lavado a Máquina (Caliente);La temperatura del agua inicial no debe exceder 50C o 120F.;washHot50;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL WASH PROCEDURES.
-5;Wash;Lavado a Máquina (Caliente);La temperatura del agua inicial no debe exceder 60C o 140F.;washHot60;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL WASH PROCEDURES.
-6;Wash;Lavado a Máquina (Caliente);La temperatura del agua inicial no debe exceder 70C or 160F.;washHot70;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL WASH PROCEDURES.
-7;Wash;Lavado a Máquina (Caliente);La temperatura del agua inicial no debe exceder 95C o 200F.;washHot95;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL WASH PROCEDURES.
-8;Wash;Lavado a Máquina (Planchado Permanente);Prenda puede ser lavada mediante la configuración diseñada para preservar el planchado permanente, centrifugado con agua fría.;washPermanent;.
-9;Wash;Lavado a Máquina (Suave o Delicado);Prenda puede ser lavada mediante la configuración bajas revoluciones y/o tiempo reducido para prendas delicadas.;washGentle;.
-10;Wash;Lavado a Mano;Prenda puede ser lavada mediante el uso de agua, detergente o jabón y manipulación manual.;washHand;.
-11;Wash;No Lavar;Prenda no puede ser lavada con seguridad por cualquier otro proceso. Normalmente acompañado de instrucciones limpio y seco.;washNo;.
-12;Bleach;Lejía Si es Necesario;Cualquier producto blanqueador disponible en el mercado puede ser utilizado en el proceso de lavado.;bleachNeeded;All (98+%) washable textiles are safe in some type of bleach. IF BLEACH IS NOT MENTIONED OR REPRESENTED BY A SYMBOL, ANY BLEACH MAY BE USED.
-13;Bleach;Lejía sin Cloro Si es Necesario;Sólo un producto sin cloro, lejía de color puede ser utilizado en el proceso de lavado. El cloro no puede ser utilizado.;bleachNonChlorine;All (98+%) washable textiles are safe in some type of bleach. IF BLEACH IS NOT MENTIONED OR REPRESENTED BY A SYMBOL, ANY BLEACH MAY BE USED.
-14;Bleach;No Usar Lejía;Ningún producto blanqueador puede ser utilizado. La prenda no resiste sin desteñirse o no es estructuralmente capaz de resistir cualquier blanqueador.;bleachNot;All (98+%) washable textiles are safe in some type of bleach. IF BLEACH IS NOT MENTIONED OR REPRESENTED BY A SYMBOL, ANY BLEACH MAY BE USED.
-15;Dry;Secadora (Normal);Un máquina secadora se puede utilizar con regularidad en el ajuste de temperatura máxima disponible.;dryNormal;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL DRY PROCEDURES.
-16;Dry;Usar Secadora(Normal, Temperatura Baja);Un máquina secadora se puede utilizar con regularidad en el ajuste de temperatura mínima disponible.;dryLow;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL DRY PROCEDURES.
-17;Dry;Usar Secadora(Normal, Temperatura Media);Una secadora puede ser utilizado regularmente en un ajuste de temperatura media.;dryMedium;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL DRY PROCEDURES.
-18;Dry;Usar Secadora(Normal, Temperatura Alta);Secadora puede ser utilizada en la configuración de máxima temperatura.;dryHigh;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL DRY PROCEDURES.
-19;Dry;Usar Secadora (Normal, Sin Calor);Una secadora puede ser utilizado regularmente sólo a Sin calor o la configuración de solo aire.;dryNo;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL DRY PROCEDURES.
-20;Dry;Usar Secadora (Planchado Permanente);Una secadora puede ser utilizado con regularidad sólo en la configuración de planchado permanente.;dryPerman;.
-21;Dry;Usar Secadora (Delicado);Un secador de máquina puede ser utilizado con regularidad solamente en el suave.;dryGentle;.
-22;Dry;No Usar Secadora;Un secador de máquina no se puede utilizar. Por lo general acompañado de un símbolo método de secado alternativo.;dryNotTumble;.
-23;Dry;No Lavar en Seco;Un secador de máquina no se puede utilizar. Por lo general acompañado de un símbolo método de secado alternativo.;dryNotDry;.
-24;Dry;Lavado en Seco;Cuelgue la prenda o poseía. En interior o exterior.;dryLine;.
-25;Dry;Escurrir;Cuelgue la prenda o poseía. En interior o exterior, sin plegar o alisar.;dryDrip;.
-26;Dry;Secar en Horizontal;Estirar posado para secar;dryFlat;.
-27;Dry;Secar a la Sombra;Secar a la luz del sol directa. Normalmente añadido a la línea de secado en seco.;dryShade;.
+1;Wash;Lavado a Máquina (Normal);Lavado a máquina para prendas de algodón.;washNormal;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL WASH PROCEDURES.
+2;Wash;Lavado a Máquina (Frio);La máxima temperatura de lavado es 30º.;washCold;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL WASH PROCEDURES.
+3;Wash;Lavado a Máquina (Templado);La máxima temperatura de lavado es 40º.;washWarm;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL WASH PROCEDURES.
+4;Wash;Lavado a Máquina (Caliente);La máxima temperatura de lavado es 50º.;washHot50;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL WASH PROCEDURES.
+5;Wash;Lavado a Máquina (Caliente);La máxima temperatura de lavado es 60º.;washHot60;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL WASH PROCEDURES.
+6;Wash;Lavado a Máquina (Caliente);La máxima temperatura de lavado es 70º.;washHot70;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL WASH PROCEDURES.
+7;Wash;Lavado a Máquina (Caliente);La máxima temperatura de lavado es 95º.;washHot95;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL WASH PROCEDURES.
+8;Wash;Lavado a Máquina (Planchado Permanente);Solo admite el lavado para prendas delicadas. Agitación mínima, centrifugado flojo y corto;washPermanent;.
+9;Wash;Lavado a Máquina (Suave o Delicado);"Solo admite el lavado para prendas muy delicadas. Agitación mínima, centrifugado flojo y corto;washGentle;.
+10;Wash;Lavado a Mano;La prenda solo admite el lavado a mano.;washHand;.
+11;Wash;No Lavar;La prenda no admite el lavado con agua.;washNo;.
+12;Bleach;Lejía Si es Necesario;Admite lejía en el lavado.;bleachNeeded;All (98+%) washable textiles are safe in some type of bleach. IF BLEACH IS NOT MENTIONED OR REPRESENTED BY A SYMBOL, ANY BLEACH MAY BE USED.
+13;Bleach;Lejía sin Cloro Si es Necesario;No admite ningún blanqueante.;bleachNonChlorine;All (98+%) washable textiles are safe in some type of bleach. IF BLEACH IS NOT MENTIONED OR REPRESENTED BY A SYMBOL, ANY BLEACH MAY BE USED.
+14;Bleach;No Usar Lejía;No utilizar lejía ni ningún tipo de clorato.;bleachNot;All (98+%) washable textiles are safe in some type of bleach. IF BLEACH IS NOT MENTIONED OR REPRESENTED BY A SYMBOL, ANY BLEACH MAY BE USED.
+15;Dry;Secadora (Normal);Puede usar secadora.;dryNormal;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL DRY PROCEDURES.
+16;Dry;Usar Secadora(Normal, Temperatura Baja);Se puede secar con secadora a temperatura reducida.;dryLow;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL DRY PROCEDURES.
+17;Dry;Usar Secadora(Normal, Temperatura Media);Se puede secar con secadora a temperatura normal.;dryMedium;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL DRY PROCEDURES.
+18;Dry;Usar Secadora(Normal, Temperatura Alta);Se puede secar con secadora a temperatura alta.;dryHigh;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL DRY PROCEDURES.
+19;Dry;Usar Secadora (Normal, Sin Calor);Secar sin calor.;dryNo;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL DRY PROCEDURES.
+20;Dry;Usar Secadora (Planchado Permanente);Usar secadora en modo prendas delicadas.;dryPerman;.
+21;Dry;Usar Secadora (Delicado);Usar secadora en modo prendas muy delicadas.;dryGentle;.
+22;Dry;No Usar Secadora;No se puede secar en secadora.;dryNotTumble;.
+23;Dry;No Lavar en Seco;La prenda no admite lavado en seco.;dryNotDry;.
+24;Dry;Lavado en Seco;Secar colgado de una cuerda o percha.;dryLine;.
+25;Dry;Secar en Vertical.;Secar la prenda extendida en posición vertical.;dryDrip;.
+26;Dry;Secar en Horizontal;Secar la prenda extendida en posición horizontal.;dryFlat;.
+27;Dry;Secar a la Sombra;No secar a la luz del sol directa. Normalmente añadido a la línea de secado en seco.;dryShade;.
 28;Wring;No Escurrir;No escurrir.;wringNo;.
 29;Wring;Escurrir;Escurrir.;wring;.
-30;Iron;Planchado Cualquier Temperatura (Vapor/Seco);El planchado se puede realizar con cualquier plancha, a cualquier temperatura, vapor o seco.;ironAny;IF IRONING IS NOT A NECESSARY, REGULAR CARE PROCEDURE IT NEED NOT BE MENTIONED.
-31;Iron;Planchado (Temperatura Baja);El planchado se puede realizar con cualquier plancha, a temperatura baja (110C, 230F), vapor o seco.;ironLow;IF IRONING IS NOT A NECESSARY, REGULAR CARE PROCEDURE IT NEED NOT BE MENTIONED.
-32;Iron;Planchado (Temperatura Media);El planchado se puede realizar con cualquier plancha, a temperatura medio (150C, 300F), vapor o seco.;ironMed;IF IRONING IS NOT A NECESSARY, REGULAR CARE PROCEDURE IT NEED NOT BE MENTIONED.
-33;Iron;Planchado (Temperatura Alta);El planchado se puede realizar con cualquier plancha, a temperatura alta (200C, 290F), vapor o seco.;ironHig;IF IRONING IS NOT A NECESSARY, REGULAR CARE PROCEDURE IT NEED NOT BE MENTIONED.
-34;Iron;Planchado Sin Vapor;El planchado se realizara con plancha en seco, a temperatura media.;ironNotSteam;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL IRONING PROCEDURES.
-35;Iron;No Planchar;Prenda no puedes ser alisada o tratada con una plancha.;ironNotIron;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL IRONING PROCEDURES.
-36;DryClean;Lavado en Seco;Cualquier lavado en seco, cualquier disolvente, ciclo,humedad o temperatura.;dryClean;.
-37;DryClean;Lavado en Seco (Cualquier Disolvente);Cualquier lavado en seco, cualquier disolvente. Normalmente acompañado de otras instrucciones de lavado en seco.;dryAny;.
-38;DryClean;Lavado en Seco (Disolvente a Derivado Petroleo);Lavado en seco solo con disolventes derivados del petróleo. Normalmente acompañado de otras instrucciones.;dryPetro;.
-39;DryClean;Lavado en Seco;Cualquier disolvente excepto tricloroetileno. Cualquier lavado en seco con disolvente que no sea el tricloroetileno puede ser utilizado con seguridad.;dryNoTri;.
-40;DryClean;Lavado en Seco, Ciclo Corto;Puede ser utilizado con la restricción de disolvente A, P o F.;dryShort;.
-41;DryClean;Lavado en Seco, Baja Humedad;Puede ser utilizado con la restricción de disolvente A, P o F.;dryRedu;.
-42;DryClean;Lavado en Seco, Baja Temperatura;Puede ser utilizado con la restricción de disolvente A, P o F.;dryLowH;.
-43;DryClean;Lavado en Seco, Sin Vapor;Puede ser utilizado con la restricción de disolvente A, P o F.;dryNoSteam;.
+30;Iron;Planchado Cualquier Temperatura (Vapor/Seco);Admite planchado.;ironAny;IF IRONING IS NOT A NECESSARY, REGULAR CARE PROCEDURE IT NEED NOT BE MENTIONED.
+31;Iron;Planchado (Temperatura Baja);Planchar a temperatura baja, máximo 110º.;ironLow;IF IRONING IS NOT A NECESSARY, REGULAR CARE PROCEDURE IT NEED NOT BE MENTIONED.
+32;Iron;Planchado (Temperatura Media);Planchar a temperatura baja, máximo 150º.;ironMed;IF IRONING IS NOT A NECESSARY, REGULAR CARE PROCEDURE IT NEED NOT BE MENTIONED.
+33;Iron;Planchado (Temperatura Alta);Planchar a temperatura baja, máximo 200º.;ironHig;IF IRONING IS NOT A NECESSARY, REGULAR CARE PROCEDURE IT NEED NOT BE MENTIONED.
+34;Iron;Planchado Sin Vapor;La prenda no admite vapor durante el planchado.;ironNotSteam;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL IRONING PROCEDURES.
+35;Iron;No Planchar;La prenda no admite planchado;ironNotIron;SYSTEM OF DOTS INDICATING TEMPERATURE RANGE IS THE SAME FOR ALL IRONING PROCEDURES.
+36;DryClean;Lavado en Seco;La prenda admite lavado en seco. (Sólo por profesionales);dryClean;.
+37;DryClean;Lavado en Seco (Cualquier Disolvente);Admite limpieza en seco con disolventes corriente. (Sólo por profesionales);dryAny;.
+38;DryClean;Lavado en Seco (Disolvente a Derivado Petroleo);Admite limpieza en seco solo con esencias minerales. (Sólo por profesionales);dryPetro;.
+39;DryClean;Lavado en Seco;Admite limpieza en seco solo con esencias minerales, percloroetileno. (Sólo por profesionales);dryNoTri;.
+40;DryClean;Lavado en Seco, Ciclo Corto;Lavado en seco con ciclo corto. Puede ser utilizado con la restricción de disolvente A, P o F.;dryShort;.
+41;DryClean;Lavado en Seco, Baja Humedad;Lavado en seco con humedad baja.Puede ser utilizado con la restricción de disolvente A, P o F.;dryRedu;.
+42;DryClean;Lavado en Seco, Baja Temperatura;Lavado en seco con ciclo baja temperatura.Puede ser utilizado con la restricción de disolvente A, P o F.;dryLowH;.
+43;DryClean;Lavado en Seco, Sin Vapor;Lavado en seco con ciclo sin vapor. Puede ser utilizado con la restricción de disolvente A, P o F.;dryNoSteam;.
 44;DryClean;No Lavar en Seco;La prenda no puede ser lavada en seco.;dryNoD;.

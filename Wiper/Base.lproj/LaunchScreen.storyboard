@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +16,60 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="BTi-zv-v2N">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H1h-Az-Sgz">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.59999999999999998" contentMode="center" id="sIP-ih-gRV">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <animations/>
+                                </view>
+                                <animations/>
+                                <blurEffect style="extraLight"/>
+                            </visualEffectView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="presentationImage" translatesAutoresizingMaskIntoConstraints="NO" id="zxo-Hs-Djw">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zxo-Hs-Djw" secondAttribute="height" multiplier="1:1" id="1uo-zZ-Jzg"/>
+                                    <constraint firstAttribute="width" constant="300" id="Atu-ZC-4uL"/>
+                                    <constraint firstAttribute="height" constant="300" id="KEE-bp-9Hg"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1uo-zZ-Jzg"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="BTi-zv-v2N" secondAttribute="bottom" id="40s-hC-hpF"/>
+                            <constraint firstItem="zxo-Hs-Djw" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="G79-EQ-IlK"/>
+                            <constraint firstItem="H1h-Az-Sgz" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="GNj-Rk-QPl"/>
+                            <constraint firstItem="zxo-Hs-Djw" firstAttribute="top" secondItem="H1h-Az-Sgz" secondAttribute="bottom" id="MmX-IL-eS9"/>
+                            <constraint firstItem="BTi-zv-v2N" firstAttribute="top" secondItem="H1h-Az-Sgz" secondAttribute="bottom" constant="-130" id="Szb-S8-If1"/>
+                            <constraint firstItem="BTi-zv-v2N" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="aiz-cZ-B2e"/>
+                            <constraint firstAttribute="trailing" secondItem="H1h-Az-Sgz" secondAttribute="trailing" id="mEK-6b-V4I"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="H1h-Az-Sgz" secondAttribute="bottom" id="oCd-LW-I6o"/>
+                            <constraint firstItem="zxo-Hs-Djw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="oEe-YA-wGt"/>
+                            <constraint firstAttribute="trailing" secondItem="BTi-zv-v2N" secondAttribute="trailing" id="piy-FW-ei2"/>
+                            <constraint firstItem="H1h-Az-Sgz" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="sDX-Bv-IKe"/>
+                            <constraint firstItem="BTi-zv-v2N" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="x9H-Gx-p8f"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Szb-S8-If1"/>
+                                <exclude reference="MmX-IL-eS9"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +77,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="3288" height="2912"/>
+        <image name="presentationImage" width="1024" height="1024"/>
+    </resources>
 </document>

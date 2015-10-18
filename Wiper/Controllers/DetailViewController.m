@@ -18,9 +18,11 @@
     [super viewDidLoad];
     
     self.contentVw.backgroundColor = _backgroundColor;
+    self.contentVw.layer.cornerRadius = 20;
     
     // Do any additional setup after loading the view.
-    [self categoryLbl].text = [self categorySt];
+    [self categoryLbl].text = NSLocalizedString([_categorySt uppercaseString], _categorySt);
+    
     [self titleLbl].text = [self titleSt];
     [self image].image = [self imageIcon];
     
@@ -35,12 +37,15 @@
     
     
     if ([self note] && [[self note] isEqualToString:@".\r"]) {
-        [[self noteLbl] removeFromSuperview];
-        [[self noteTV] removeFromSuperview];
+        [[self noteLbl] setHidden:YES];
+        [[self noteTV] setHidden:YES];
     }else if([self note]){
         [[self descriptionTV] addObserver:self forKeyPath:@"contentSize" options:(NSKeyValueObservingOptionNew) context:NULL];
         [self noteTV].text = [self note];
         [self.descriptionTV removeObserver:self forKeyPath:@"contentSize"];
+        [[self noteLbl] setHidden:NO];
+        [[self noteTV] setHidden:NO];
+
     }
     
 
@@ -64,6 +69,10 @@
     
     
     
+}
+
+- (IBAction)swipeGesture:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*

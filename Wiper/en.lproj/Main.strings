@@ -1,0 +1,51 @@
+
+/* Class = "UILabel"; text = "NOTE"; ObjectID = "80W-TC-DWl"; */
+"80W-TC-DWl.text" = "NOTE";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "8n0-V7-QAj"; */
+"8n0-V7-QAj.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "Reference Label"; ObjectID = "CcV-zg-CJF"; */
+"CcV-zg-CJF.text" = "Reference Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "GA9-P2-qQ0"; */
+"GA9-P2-qQ0.text" = "Label";
+
+/* Class = "UITabBarController"; title = "MenuTabBarController"; ObjectID = "Gjz-WZ-Qb7"; */
+"Gjz-WZ-Qb7.title" = "MenuTabBarController";
+
+/* Class = "UINavigationItem"; title = "Search"; ObjectID = "KB1-Wh-6q6"; */
+"KB1-Wh-6q6.title" = "Search";
+
+/* Class = "UILabel"; text = "DryClean"; ObjectID = "MOI-1L-rib"; */
+"MOI-1L-rib.text" = "DryClean";
+
+/* Class = "UIViewController"; title = "DetailViewController"; ObjectID = "Nse-RN-JMQ"; */
+"Nse-RN-JMQ.title" = "DetailViewController";
+
+/* Class = "UILabel"; text = "Laundry Reference "; ObjectID = "PGx-hb-xoT"; */
+"PGx-hb-xoT.text" = "Laundry Reference ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "UX8-xN-5na"; */
+"UX8-xN-5na.text" = "Label";
+
+/* Class = "UITextView"; text = "Lorem ipsum d"; ObjectID = "UaD-AP-z9U"; */
+"UaD-AP-z9U.text" = "Lorem ipsum d";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "g4w-QE-Gef"; */
+"g4w-QE-Gef.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UIViewController"; title = "ReferenceViewController"; ObjectID = "i34-do-hkj"; */
+"i34-do-hkj.title" = "ReferenceViewController";
+
+/* Class = "UITabBarItem"; title = "Search"; ObjectID = "nCU-Nc-K96"; */
+"nCU-Nc-K96.title" = "Search";
+
+/* Class = "UITabBarItem"; title = "List"; ObjectID = "nhn-67-UGq"; */
+"nhn-67-UGq.title" = "List";
+
+/* Class = "UIViewController"; title = "SearchViewController"; ObjectID = "o1h-io-gx8"; */
+"o1h-io-gx8.title" = "SearchViewController";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "uKw-KK-SQO"; */
+"uKw-KK-SQO.text" = "Label";

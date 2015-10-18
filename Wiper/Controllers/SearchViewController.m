@@ -28,9 +28,6 @@
     
     _selectedIcon = [[NSMutableArray alloc]init];
     
-    [self backgroundBlur];
-    
-    [self controlOkButton];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,6 +37,10 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     
+    [self backgroundBlur];
+    
+    [self controlOkButton];
+
     [self.collectionViewSea reloadData];
     [self controlOkButton];
 
@@ -93,7 +94,8 @@
     if (kind == UICollectionElementKindSectionHeader) {
         HeaderCollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView" forIndexPath:indexPath];
         NSString *title = [[self.dataArr objectAtIndex:[self getPositionWithIndex:indexPath]] objectAtIndex:1];
-        headerView.label.text = title;
+        NSString *capTitle = [title uppercaseString];
+        headerView.label.text = NSLocalizedString(capTitle, title);
        // headerView.label.layer.cornerRadius = 20;
         headerView.label.layer.masksToBounds = YES;
         

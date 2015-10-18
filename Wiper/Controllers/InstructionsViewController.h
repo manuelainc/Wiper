@@ -14,5 +14,6 @@
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) IBOutlet UIButton *backButton;
 - (IBAction)backButtonPush:(id)sender;
+- (IBAction)swipeBackGesture:(id)sender;
 
 @end
